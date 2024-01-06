@@ -30,6 +30,15 @@ services:
     # Override the default command
     command: ["npm", "run", "test"]
 
+  backend_tests:
+    build: 
+      context: ./backend/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./backend:/app
+      - /app/venv
+    command: ["python3", "manage.py", "test"]
+
 
 # Run 'docker-compose up' to run
 # Run 'docker-compose up --build' to run after a change

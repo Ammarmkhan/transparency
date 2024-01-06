@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t ammarmkhan/transparency -f frontend/Dockerfile.dev . 
+  - docker build -t ammarmkhan/transparency -f backend/Dockerfile.dev . 
+
+script:
+  - docker run -e CI=true ammarmkhan/transparency npm run test -- --coverage
+  - docker run -e CI=true ammarmkhan/transparency-backend python manage.py test

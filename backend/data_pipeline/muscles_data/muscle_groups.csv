@@ -1,0 +1,30 @@
+Exercise Name,Chest,Back,Arms,Abdominals,Legs,Shoulders
+Aerobics,False,False,False,False,False,False
+Bench Press (Barbell),True,False,True,False,False,True
+Shoulder Press (Plate Loaded),False,False,True,False,False,True
+Seated Row (Cable),False,True,True,False,False,False
+Face Pull (Cable),False,True,True,False,False,True
+Lunge (Dumbbell),False,False,True,False,True,False
+Seated Leg Curl (Machine),False,False,False,False,True,False
+Leg Press,False,False,False,False,True,False
+Squat (Barbell),False,False,True,False,True,True
+Running,False,False,False,False,True,False
+Incline Bench Press (Dumbbell),True,False,True,False,False,True
+Arnold Press (Dumbbell),False,False,True,False,False,True
+Hammer Curl (Dumbbell),False,False,True,False,False,False
+Lat Pulldown (Cable),False,True,True,False,False,True
+Bent Over Row - Underhand (Barbell),False,True,True,False,False,False
+Incline Row (Dumbbell),False,True,True,False,False,True
+Lateral Raise (Dumbbell),False,False,False,False,False,True
+Romanian Deadlift (Dumbbell),False,True,True,False,True,True
+Seated Calf Raise (Plate Loaded),False,False,False,False,True,False
+Bicep Curl (Dumbbell),False,False,True,False,False,False
+Triceps Extension (Dumbbell),False,True,True,False,False,True
+Plank,False,False,False,True,False,True
+Jump Rope,False,False,True,False,True,True
+Squat (Bodyweight),False,False,True,False,True,True
+Push Up,True,False,True,False,False,True
+Side Plank,False,False,False,True,False,True
+Crunch,False,False,False,True,False,False
+Pull Up,True,True,True,False,False,True
+Triceps Pushdown (Cable - Straight Bar),False,True,True,False,False,True

@@ -1,0 +1,18 @@
+# Install base
+FROM node:hydrogen-alpine3.19
+
+# Set a workdir
+WORKDIR /app
+
+# Install dependencies
+COPY package.json .
+RUN npm install 
+
+# Copy the rest of the code
+COPY . .
+
+# Run the app
+CMD ["npm", "run", "start", "0.0.0.0:3000"]
+
+# To build: docker build -f Dockerfile.dev .
+# To run: docker run -p 8000:8000 -v $(pwd):/app <img_id>

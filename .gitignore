@@ -1,0 +1,17 @@
+# Ignore virtual environment
+venv/
+
+# Ignore Node.js packages
+node_modules/
+
+# Other
+.DS_Store
+
+# Ignore everything inside the data folder
+backend/data_pipeline/data/*
+
+# Ignore credentials
+backend/fitness_api/extract_from_gmail/*
+
+# Ignore openai key
+backend/fitness_api/openai_key.py

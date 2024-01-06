@@ -1,0 +1,35 @@
+version: '3'
+services:
+  django-app:
+    restart: 'no'
+    build: 
+        context: ./backend/
+        dockerfile: Dockerfile.dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - /app/venv
+  node-app:
+    restart: 'no'
+    build: 
+        context: ./frontend/
+        dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000" 
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+  frontend_tests:
+    build: 
+      context: ./frontend/
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    # Override the default command
+    command: ["npm", "run", "test"]
+
+
+# Run 'docker-compose up' to run
+# Run 'docker-compose up --build' to run after a change
